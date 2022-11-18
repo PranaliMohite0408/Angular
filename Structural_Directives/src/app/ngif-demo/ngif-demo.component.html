@@ -1,0 +1,14 @@
+<h1 *ngIf="flag">
+    Inside ngif_demo Component
+</h1>
+
+<ng-template #VegFood>
+    <h1>Please Consider veg food menu</h1>
+</ng-template>
+
+<ng-template #NonvegFood>
+    <h1>Please consider non veg food menu</h1>
+</ng-template>
+
+<h1 *ngIf="Food; then VegFood; else NonvegFood">
+</h1>

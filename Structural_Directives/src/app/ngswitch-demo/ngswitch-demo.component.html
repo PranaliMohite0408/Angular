@@ -1,0 +1,9 @@
+<h1>Marvellous Infosystem Portal</h1>
+
+<div [ngSwitch]="Batch">
+    <div *ngSwitchCase="'PPA'">You are Selecting PPA</div>
+    <div *ngSwitchCase="'LB'">You are Selecting LB</div>
+    <div *ngSwitchCase="'Python'">You are Selecting Python</div>
+    <div *ngSwitchCase="'Angular'">You are Selecting Angular</div>
+    <div *ngSwitchDefault>There is No Such Batch</div>
+</div>
