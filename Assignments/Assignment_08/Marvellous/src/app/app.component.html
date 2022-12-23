@@ -1,0 +1,24 @@
+<!--
+Question1
+<app-child (Myevent)="Value=$event"></app-child>
+<h1>Value from Child is : {{Value}}</h1>    
+-->
+
+<!--
+Question 2
+<app-child (Myevent)="Data=$event" [Data]="Message"></app-child>
+<h1>Message from Child is : {{Data}}</h1>
+-->
+
+<!--
+Question 3    
+<h1>Enter a String :</h1>
+<input [(ngModel)]="Name" type="text">
+<h1>Length of string is : {{fun()}}</h1>
+-->
+
+<h1>Enter a String :</h1>
+<input #mydata type="text">
+<button (click)="fun(mydata.value)" >Click Me</button>
+<h1>Length of the Strig is : {{len}}</h1>
+
