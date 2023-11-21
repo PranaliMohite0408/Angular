@@ -11,7 +11,7 @@ export class EventComponent
 
   public Fun()
   {
-    console.log("Inside Event Handler...");
+    console.log("Inside Fun Function...");
   }
   public Gun()
   {

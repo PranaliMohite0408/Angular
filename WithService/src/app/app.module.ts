@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { BatchdetailsComponent } from './batchdetails/batchdetails.component';
 import { BatchlistComponent } from './batchlist/batchlist.component';
 import { BatchserviceService } from './batchservice.service';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { BatchserviceService } from './batchservice.service';
     BatchlistComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [BatchserviceService],
   bootstrap: [AppComponent]

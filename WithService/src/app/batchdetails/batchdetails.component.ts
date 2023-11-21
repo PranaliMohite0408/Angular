@@ -19,7 +19,7 @@ export class BatchdetailsComponent implements OnInit
 
   ngOnInit(): void 
   {
-    this.Batches = this._obj.GetBatches();
+    this.Batches = this._obj.GetBatches().subscribe(data=>this.Batches = data);
   }
 
 }

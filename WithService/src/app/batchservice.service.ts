@@ -1,4 +1,7 @@
 import { Injectable } from '@angular/core';
+import { IBatches } from './Batches';
+import {Observable} from 'rxjs';
+import {HttpClient} from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -7,13 +10,12 @@ export class BatchserviceService {
 
   //Connection to server
 
-  public GetBatches()
-  {
-    return[
-      {"Name":"PPA", "Duration":4, "Fees":16500},
-      {"Name":"LB", "Duration":3, "Fees":1700},
-      {"Name":"Python", "Duration":5, "Fees":15000}
-    ]
+  private URL = './assets/Data/Batches.json';
+
+  public GetBatches():Observable<IBatches[]>
+  { 
+    return this._obj.get<IBatches[]>(this.URL);
   }
-  constructor() { }
+  
+  constructor(private _obj : HttpClient){}
 }

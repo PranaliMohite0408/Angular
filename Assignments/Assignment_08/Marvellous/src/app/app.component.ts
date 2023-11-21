@@ -8,23 +8,22 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Marvellous';
 
-  //public Value:any;// Question  1
+  public Value:any;// Question  1
 
-  /*
-  Question 2
+
   public Message = "Hello from Parent ";
-  public Data:any;*/
+  public Data:any;
 
-  /*
-  Question 3
-  public len:any;
   public Name:any;
-  public fun()
+  public len1:any;
+
+  public gun()
   {
-    this.len = this.Name.length;
-    return this.len;
+    this.len1 = this.Name.length;
+    return this.len1;
   }
-  */
+
+
 
  //Question 4
   public len:any

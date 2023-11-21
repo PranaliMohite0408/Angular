@@ -9,7 +9,7 @@ export class NewCompComponent
 {
     public Name = "Marvellous";
 
-    public data1 = this.Name.toLocaleLowerCase();
+    public data1 = this.Name.toLowerCase();
 
     public data2 = this.Name.toUpperCase();
 
